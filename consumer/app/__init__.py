@@ -7,7 +7,6 @@ from kafka import KafkaConsumer
 
 
 def main():
-    print(EnvVariables.get_env("KAFKA_TOPIC_NAME"))
     try:
         # To consume latest messages and auto-commit offsets
         consumer = KafkaConsumer(
